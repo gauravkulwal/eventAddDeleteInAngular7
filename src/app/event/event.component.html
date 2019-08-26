@@ -1,0 +1,15 @@
+<div class="media mt-3">
+    <h3 class="font-weight-bold h3-responsive mr-3">{{value.time}}</h3>
+    <div class="media-body">
+        <button class="badge badge-pill badge-danger float-right" (click)="handleDeleteClick()">X</button>
+        <h6 class="mt-0 font-weight-bold">{{ value.subject }}</h6>
+        <hr class="hr-bold mb-0 my-2">
+        <p class="mb-0" *ngIf="value.location">
+            <span class="badge badge-info  float-left mr-2">#</span> {{ value.location }}
+        </p>
+    </div>
+
+</div>
+<p class="p-3 m-3 mb-2 " style="background-color:lightblue" *ngIf="value.description">
+    {{ value.description }}
+</p>
